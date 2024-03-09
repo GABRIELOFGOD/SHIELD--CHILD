@@ -6,6 +6,7 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Blog from '../pages/Blog';
 import Donate from '../components/Donate';
+import Report from '../pages/Report';
 
 const router = createBrowserRouter([
   {
