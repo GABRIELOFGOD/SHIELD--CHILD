@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="pt-mid pb-tip px-6 md:px-mid bg-background">
       <div className="flex flex-col mb-10 items-center justify-center">
-        <p className="text-[80px] leading-[75px] font-[900] md:w-[746px] text-secondary text-center">
+        <p className="md:text-[80px] text-[40px] leading-[75px] font-[900] md:w-[746px] text-secondary text-center">
           Trailblazers for Digital Safety
         </p>
         <p className="text-black text-md md:w-[746px] py-5 text-center">
