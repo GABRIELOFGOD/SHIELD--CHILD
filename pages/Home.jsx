@@ -19,16 +19,16 @@ const Home = () => {
           strategies. Join their journey towards a secure digital landscape for
           all.
         </p>
-        <div className="flex gap-10">
+        <div className="flex gap-5 items-center justify-center md:gap-10">
           <Link
-            to=""
-            className="py-2 h-fit w-fit text-small hover:bg-secondary duration-200 rounded-md px-4 border border-primary bg-primary text-white"
+            to="report"
+            className="py-2 h-fit w-fit text-xs md:text-small hover:bg-secondary duration-200 rounded-md px-4 border border-primary bg-primary text-white"
           >
             Make a Report
           </Link>
           <Link
             to="/contact"
-            className="py-2 h-fit w-fit text-small rounded-md border-primary text-primary px-8 border bg-transparent hover:bg-secondary duration-200 hover:text-white"
+            className="py-2 h-fit w-fit text-xs md:text-small rounded-md border-primary text-primary px-8 border bg-transparent hover:bg-secondary duration-200 hover:text-white"
           >
             Contact us
           </Link>
