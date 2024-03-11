@@ -2,7 +2,7 @@ import React from 'react'
 
 const Collection = ({img, des}) => {
   return (
-    <div className="flex justify-between flex-col w-[30%]">
+    <div className="flex justify-between flex-col w-full md:w-[30%]">
       <div className="relative w-full h-[200px] overflow-hidden">
         <img className="h-[348px] w-full object-cover" src={img} />
         <span className="absolute top-0 left-0 text-sm font-medium text-background mt-4 ml-3">

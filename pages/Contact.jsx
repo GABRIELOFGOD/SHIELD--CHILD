@@ -1,8 +1,6 @@
 import React from 'react';
+import ReachOut from '../components/ReachOut';
 const phone ="/images/contact us image.png";
-const call ="/images/Call.png";
-const website ="/images/Website.png";
-const Email ="/images/Email.png";
 
 
 const Contact = () => {
@@ -29,6 +27,7 @@ const Contact = () => {
           <div className="flex w-full justify-end items-end"><button className='py-3 px-20 flex bg-primary text-white rounded-md w-full md:w-fit'>SEND</button></div>
         </div>
       </div>
+      <ReachOut />
     </div>
   );
 }

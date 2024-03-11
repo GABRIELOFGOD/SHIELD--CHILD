@@ -1,3 +1,7 @@
+import { IoCallOutline } from "react-icons/io5";
+import { CiGlobe } from "react-icons/ci";
+import { IoMailOutline } from "react-icons/io5";
+
 export const HeaderNav = [
     {
         id: 1,
@@ -90,4 +94,20 @@ export const blogs = [
     },
 ]
 
-
+export const reactOut = [
+    {
+        icon: <IoCallOutline />,
+        content: '+234 906-777-4136',
+        path: 'tel: +234 906-777-4136'
+    },
+    {
+        icon: <CiGlobe />,
+        content: 'webfalainitiative@gmail.com',
+        path: 'https://webfalainitiative@gmail.com'
+    },
+    {
+        icon: <IoMailOutline />,
+        content: 'webfalainitiative@gmail.com',
+        path: 'mailto: webfalainitiative@gmail.com'
+    }
+]

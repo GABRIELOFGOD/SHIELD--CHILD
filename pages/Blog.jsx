@@ -4,7 +4,7 @@ const background ="/images/background.png"
 
 const Blog = () => {
   return (
-    <div className="md:pt-mid pb-tip px-6 md:px-mid">
+    <div className=" px-6 md:px-mid">
       {/* <div className="relative flex flex-col items-center justify-center">
         <div className="bg-primary md:h-[520px] w-full rounded-3xl md:pt-16 md:pl-28">
           <img

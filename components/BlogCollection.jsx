@@ -32,10 +32,13 @@ const blogdata = [
 
 const BlogCollection = () => {
   return (
-    <div className=" flex flex-col md:flex-row flex-wrap justify-between gap-5">
-      {blogdata.map(({ img, des }, i) => (
-        <Collection key={i} img={img} des={des} />
-      ))}
+    <div className='py-10'>
+      <p className="text-center text-2xl my-3 md:text-4xl font-bold">Exploy Our Blog</p>
+      <div className=" flex flex-col md:flex-row flex-wrap justify-between gap-5">
+        {blogdata.map(({ img, des }, i) => (
+          <Collection key={i} img={img} des={des} />
+        ))}
+      </div>
     </div>
   );
 }
