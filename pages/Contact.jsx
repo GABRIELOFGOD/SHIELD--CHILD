@@ -7,92 +7,26 @@ const Email ="/images/Email.png";
 
 const Contact = () => {
   return (
-    <div className=" py-10 px-6 md:px-mid">
-      <div className="md:w-[1260px] md:h-[633px] flex flex-col md:flex-row border-[0.4px] rounded-[16px]">
-        <div className="md:w-[509px] w-full ">
-          <img src={phone} alt="contact Image" className="md:rounded-l-2xl" />
-        </div>
-        <div className="md:w-[754px] p-[32px] flex gap-10 flex-col">
-          <h1 className="text-lg font-bold">Send Message</h1>
-          <div className="flex flex-col gap-4">
-            <form
-              className="flex flex-col "
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <label htmlFor="Name">FullName</label>
-              <input
-                type="text"
-                name="FullName"
-                className="border rounded-lg w-full outline-none "
-              />
-            </form>
-            <form
-              className="flex flex-col "
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <label htmlFor="Email address">Email address</label>
-              <input
-                type="email"
-                name="Email address"
-                className="border rounded-md w-full outline-none "
-              />
-            </form>
-            <form
-              className="flex flex-col"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <label htmlFor="message">Message</label>
-              <textarea
-                className="border rounded-md w-full outline-none "
-              ></textarea>
-            </form>
-            <div className="flex justify-end ">
-              <button className="h-[50px] w-[170px] flex rounded-[8px] py-[13px]  px-16 mb-48 bg-primary hover:bg-secondary text-white">
-                Send
-              </button>
+    <div className='px-6 md:px-32 py-10 md:py-20'>
+      <div className='flex overflow-hidden rounded-[25px] border-gray-200 border-2'>
+        <img className='hidden md:flex' src={phone} alt="" />
+        <div className='px-6 py-4 my-auto gap-10 flex flex-col w-full'>
+          <p className="text-xl font-bold">Send Message</p>
+          <div className='flex flex-col gap-5'>
+            <div>
+              <p className="text-sm">Full Name:</p>
+              <input className='border-gray-300 border-2 w-full rounded-md px-6 h-10' type="text" />
+            </div>
+            <div>
+              <p className="text-sm">Email address:</p>
+              <input className='border-gray-300 border-2 w-full rounded-md px-6 h-10' type="text" />
+            </div>
+            <div>
+              <p className="text-sm">Message:</p>
+              <textarea className='border-gray-300 h-[100px] border-2 w-full rounded-md px-6'></textarea>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-col justify-center items-center my-24">
-        <h1 className="text-lg font-bold">Reach out</h1>
-        <p className="text-gray-500">
-          You can reach out through the following platforms
-        </p>
-        <div className="flex flex-col md:flex-row gap-10 mt-10 ">
-          <div className="flex flex-col gap-2">
-            <div className="h-[48px] w-[48px] bg-primary rounded-full relative ml-8">
-              <img
-                src={call}
-                alt="call-image"
-                className="h-[24px] w-[24px] absolute top-3 left-3"
-              />
-            </div>
-            <span className="">
-              +234 906-777-4136
-            </span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="h-[48px] w-[48px] bg-primary rounded-full relative ml-16">
-              <img
-                src={website}
-                alt="call-image"
-                className="h-[24px] w-[24px] absolute top-3 left-3 "
-              />
-            </div>
-            <span>www.webfalainitiative.org</span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="h-[48px] w-[48px] bg-primary rounded-full relative ml-16">
-              <img
-                src={Email}
-                alt="call-image"
-                className="h-[24px] w-[24px] absolute top-3 left-3"
-              />
-            </div>
-
-            <span>webfalainitiative@gmail.com</span>
-          </div>
+          <div className="flex w-full justify-end items-end"><button className='py-3 px-20 flex bg-primary text-white rounded-md w-full md:w-fit'>SEND</button></div>
         </div>
       </div>
     </div>

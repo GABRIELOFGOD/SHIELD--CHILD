@@ -1,5 +1,7 @@
 import React from 'react'
 import { blogs } from '../utils/constants';
+import BlogCard from './BlogCard';
+import { Link } from 'react-router-dom';
 const stop ="/images/stop.png"
 
 const OurBlog = () => {
@@ -8,17 +10,14 @@ const OurBlog = () => {
       <div className="font-bold text-3xl md:text-5xl text-center mb-8">
         Explore Our Blog
       </div>
-      <div className="flex shadow-md flex-col md:flex-row gap-5">
+      <div className="flex justify-between flex-col md:flex-row gap-5">
         {
           blogs?.map((item, i) => (
-            <div key={i} className="md:w-[404px] w-full h-fit md:h-[389px] rounded-md">
-              <img src={stop} alt="stop-image" className="md:h-[310px] w-full" />
-              <div className="p-3">
-                <span className="font-light text-base">
-                  {item.context}
-                </span>
-              </div>
-            </div>
+            <BlogCard
+              key={i}
+              content={item.context}
+              image={item.image}
+            />
           ))
         }
         {/* <div className="w-[404px] h-[389px] rounded-md">
@@ -34,8 +33,8 @@ const OurBlog = () => {
           </span>
         </div> */}
       </div>
-      <div className='flex justify-center items-center'>
-        <button className="border text-primary py-[10px] px-[16px]">see more</button>
+      <div className='flex justify-center my-3 items-center'>
+        <Link to='blog' className="border text-primary py-[10px] px-[16px]">see more</Link>
       </div>
     </div>
   );

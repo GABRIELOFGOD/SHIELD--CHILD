@@ -15,15 +15,15 @@ const blogdata = [
     des: "Empowering Survivors: Overcoming Challenges in Reporting Sexual Assault",
   },
   {
-    img: "/public/images/online sexual abuse material.jpg",
+    img: "/images/online-abuse.jpg",
     des: "Empowering Survivors: Overcoming Challenges in Reporting Sexual Assault",
   },
   {
-    img: "/public/images/SEXUAL_ABUSE-transformed.jpg",
+    img: "/images/SEXUAL_ABUSE-transformed.jpg",
     des: "Empowering Survivors: Overcoming Challenges in Reporting Sexual Assault",
   },
   {
-    img: "/public/images/SAFETY-transformed.jpg",
+    img: "/images/SAFETY-transformed.jpg",
     des: "Empowering Survivors: Overcoming Challenges in Reporting Sexual Assault",
   },
 ];
@@ -32,7 +32,7 @@ const blogdata = [
 
 const BlogCollection = () => {
   return (
-    <div className=" flex flex-col md:flex-row gap-5">
+    <div className=" flex flex-col md:flex-row flex-wrap justify-between gap-5">
       {blogdata.map(({ img, des }, i) => (
         <Collection key={i} img={img} des={des} />
       ))}

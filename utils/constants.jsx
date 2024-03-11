@@ -74,17 +74,17 @@ export const materials = [
 
 export const blogs = [
     {
-        image: '',
+        image: '/images/online-abuse.jpg',
         title: '',
         context: 'Empowering Survivors: Overcoming Challenges in Reporting Sexual Assault'
     },
     {
-        image: '',
+        image: '/images/abuseface.jpg',
         title: '',
         context: 'Protecting Our Young: Recognizing Signs of Child Abuse and Taking Action'
     },
     {
-        image: '',
+        image: '/images/stop.png',
         title: '',
         context: 'Healing from Invisible Wounds: Understanding and Addressing Emotional Abuse'
     },

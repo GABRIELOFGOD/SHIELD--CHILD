@@ -3,7 +3,7 @@ const world = "/images/About us image.png";
 
 const About = () => {
   return (
-    <div className="md:pt-2.5 md:pb-4 px-6 md:px-mid mb-36">
+    <div className=" px-6 md:px-mid mb-36">
       <div className="md:grid py-10 md:py-mid grid-cols-2 ">
         <div className="flex  justify-start md:h-[468px] md:w-[462px]">
           <img src={world} alt="About Image" />
@@ -12,7 +12,7 @@ const About = () => {
           <span className="text-secondary text-2xl font-bold leading-[33.6px]">
             Who we are
           </span>
-          <div className="md:h-[777px] text-lg font-medium leading-[25.2px] text-justify flex gap-10 flex-col">
+          <div className=" text-lg font-medium leading-[25.2px] text-justify flex gap-10 flex-col">
             <p>
               At ZERAB Report, we are on a mission to combat online abuse,
               protect the vulnerable, and create a safer digital space for all.
@@ -67,7 +67,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row gap-4 mb-40 ">
         <div className="bg-[#FFFAE5] md:h-[226px] md:w-[644px] p-12 rounded-3xl">
           <span className='text-gold text-lg font-semibold'> OUR VISION</span>
-          <p className='text-xl '>
+          <p className=' '>
             At ZERAB Report, we envision a world where individuals navigate
             online spaces without fear, fostering safety and nurturing. Our
             mission is to lead a global community in protecting the vulnerable
@@ -76,7 +76,7 @@ const About = () => {
         </div>
         <div className="bg-[#FFFAE5] md:h-[226px] md:w-[608px] p-12 rounded-3xl">
           <span className='text-gold text-lg font-semibold'>OUR MISSION </span>
-          <p className='text-xl '>
+          <p className=' '>
             ZERAB Report is dedicated to combating online abuse, empowering
             digital guardianship, amplifying unsung heroes, promoting education,
             and building a collaborative community.
